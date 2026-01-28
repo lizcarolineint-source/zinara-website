@@ -1,45 +1,58 @@
-// Zinara Navigation & Interactions Script
+// Zinara Navigation & Interactions Script - MOBILE OPTIMIZED
 (function() {
   'use strict';
 
   // ==========================================
-  // NAVIGATION TOGGLE
+  // NAVIGATION TOGGLE FOR MOBILE
   // ==========================================
   const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('nav ul');
-  const navLinks = document.querySelectorAll('nav a');
+  const navLinks = document.querySelector('.nav-links');
+  const allNavLinks = document.querySelectorAll('.nav-links a');
 
   // Toggle mobile menu
   if (navToggle) {
-    navToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', navMenu.classList.contains('open'));
+    navToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
     });
   }
 
   // Close menu when link is clicked
-  navLinks.forEach(link => {
+  allNavLinks.forEach(link => {
     link.addEventListener('click', function() {
-      navMenu.classList.remove('open');
+      if (navLinks) {
+        navLinks.classList.remove('active');
+      }
       if (navToggle) {
-        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
       }
     });
   });
 
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (navLinks && navToggle) {
+      if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+      }
+    }
+  });
+
   // Close menu on Escape key
   document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && navMenu.classList.contains('open')) {
-      navMenu.classList.remove('open');
+    if (event.key === 'Escape' && navLinks) {
+      navLinks.classList.remove('active');
       if (navToggle) {
-        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('active');
       }
     }
   });
 
   // Highlight active page
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  navLinks.forEach(link => {
+  allNavLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href === '/' && currentPage === 'index.html') {
       link.classList.add('active');
@@ -165,49 +178,28 @@
   counters.forEach(counter => observer.observe(counter));
 
   // ==========================================
-  // CTA BUTTON LOGIC - START FREE AUDIT
+  // CTA BUTTON LOGIC
   // ==========================================
-  const auditCTAs = document.querySelectorAll('a[href="/audit.html"]');
-  auditCTAs.forEach(cta => {
-    // Add tracking data attribute
-    cta.setAttribute('data-cta-type', 'audit');
-    
+  const allCTAs = document.querySelectorAll('a.btn');
+  allCTAs.forEach(cta => {
     cta.addEventListener('click', function(e) {
-      // Track CTA click for analytics
-      const ctaLocation = this.closest('section')?.className || 'unknown';
-      const ctaText = this.textContent.trim();
-      
-      // Log to console for debugging
-      console.log('CTA Clicked:', {
-        text: ctaText,
-        location: ctaLocation,
-        timestamp: new Date().toISOString()
-      });
-
-      // Track with Google Analytics if available
-      if (window.gtag) {
-        gtag('event', 'cta_click', {
-          'cta_text': ctaText,
-          'cta_location': ctaLocation,
-          'page_path': window.location.pathname
-        });
+      // Ensure the link is properly clickable
+      const href = this.getAttribute('href');
+      if (href && !href.startsWith('#')) {
+        // For non-anchor links, let the browser handle navigation
+        return;
       }
       
-      // Add visual feedback
-      const originalOpacity = this.style.opacity;
-      this.style.opacity = '0.8';
-      this.style.transform = 'scale(0.98)';
-      
-      setTimeout(() => {
-        this.style.opacity = originalOpacity;
-        this.style.transform = 'scale(1)';
-      }, 150);
-    });
-
-    // Add keyboard support
-    cta.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        this.click();
+      // For anchor links, handle smooth scroll
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }
     });
   });
@@ -217,8 +209,11 @@
   // ==========================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return; // Skip empty anchors
+      
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const target = document.querySelector(href);
       if (target) {
         target.scrollIntoView({
           behavior: 'smooth',
