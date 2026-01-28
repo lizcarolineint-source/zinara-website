@@ -3,213 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zinara Digital Systems - Build predictable revenue systems with AI, automation, and strategic digital marketing. Trusted by 500+ companies.">
-    <meta name="keywords" content="digital marketing, AI training, automation, revenue growth, business systems">
+    <meta name="description" content="Zinara Digital Systems - Build predictable revenue systems with AI. Digital Marketing, AI Training, Automation, and Revenue Audits for African businesses.">
+    <meta name="keywords" content="digital marketing, AI training, automation, revenue systems, African businesses, SaaS">
     <meta name="author" content="Zinara Digital Systems">
-    <title>Zinara Digital Systems - Revenue Growth Platform</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f8cf40">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zinara.co.ke/">
+    <meta property="og:title" content="Zinara Digital Systems - Revenue Systems with AI">
+    <meta property="og:description" content="Build predictable revenue systems with AI. Digital Marketing, AI Training, Automation, and Revenue Audits.">
+    <meta property="og:image" content="https://zinara.co.ke/images/og-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zinara.co.ke/">
+    <meta property="twitter:title" content="Zinara Digital Systems - Revenue Systems with AI">
+    <meta property="twitter:description" content="Build predictable revenue systems with AI. Digital Marketing, AI Training, Automation, and Revenue Audits.">
+    <meta property="twitter:image" content="https://zinara.co.ke/images/og-social.png">
+    
+    <!-- LinkedIn -->
+    <meta property="linkedin:title" content="Zinara Digital Systems">
+    <meta property="linkedin:description" content="Build predictable revenue systems with AI">
+    <meta property="linkedin:image" content="https://zinara.co.ke/images/og-social.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://zinara.co.ke/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/zinara-logo.png">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zinara Digital Systems",
+        "url": "https://zinara.co.ke",
+        "logo": "https://zinara.co.ke/images/zinara-logo.png",
+        "description": "Build predictable revenue systems with AI",
+        "sameAs": [
+            "https://www.facebook.com/zinaradigital",
+            "https://www.linkedin.com/company/zinara-digital",
+            "https://twitter.com/zinaradigital"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+254-798-859-452",
+            "email": "info@zinara.co.ke"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://zinara.co.ke",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://zinara.co.ke/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <title>Zinara Digital Systems - Build Revenue Systems with AI</title>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="/">
-                    <span class="logo">Zinara</span>
+                <a href="/" class="logo">
+                    <img src="/images/zinara-logo.png" alt="Zinara Digital Systems Logo" width="40" height="40">
+                    <span>Zinara</span>
                 </a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="active">Home</a></li>
                 <li><a href="/digital-marketing.html">Digital Marketing</a></li>
                 <li><a href="/ai-training.html">AI Training</a></li>
                 <li><a href="/automation.html">Automation</a></li>
                 <li><a href="/audit.html">Revenue Audit</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/get-started.html" class="btn btn-primary">Start Free Audit</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Build Predictable Revenue Systems</h1>
-                <p>AI-powered platform combining digital marketing, training, and automation to scale your business.</p>
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Build Predictable Revenue Systems with AI</h1>
+                <p class="hero-subtitle">Transform your business with integrated digital marketing, AI training, automation, and revenue audits.</p>
                 <div class="hero-ctas">
-                    <a href="/get-started.html" class="btn btn-primary btn-large">Start Free Audit</a>
-                    <a href="/about.html" class="btn btn-secondary btn-large">Learn More</a>
+                    <a href="/audit.html" class="btn btn-primary">Start Your Free Audit</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
                 </div>
-                <p class="trust-signal">Trusted by 500+ companies across Africa</p>
+                <p class="hero-trust">Trusted by 500+ African businesses</p>
             </div>
             <div class="hero-image">
-                <img src="/images/hero-bg.png" alt="Team collaborating on revenue systems" loading="lazy">
+                <img src="/images/hero-homepage.png" alt="Diverse team collaborating on revenue systems" loading="lazy">
             </div>
         </div>
     </section>
 
     <!-- Social Proof -->
-    <section class="proof">
+    <section class="social-proof">
         <div class="container">
             <div class="proof-grid">
                 <div class="proof-stat">
                     <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
-                    <p>Companies</p>
+                    <p>Companies Transformed</p>
                 </div>
                 <div class="proof-stat">
                     <span class="stat-number" data-count="50000">0</span><span class="stat-suffix">+</span>
-                    <p>Professionals</p>
+                    <p>Professionals Trained</p>
                 </div>
                 <div class="proof-stat">
                     <span class="stat-number" data-count="5">0</span><span class="stat-suffix">x</span>
-                    <p>Revenue Growth</p>
+                    <p>Average Revenue Growth</p>
                 </div>
                 <div class="proof-stat">
                     <span class="stat-number" data-count="4.9">0</span><span class="stat-suffix">/5</span>
-                    <p>Client Rating</p>
+                    <p>Customer Rating</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Digital Marketing System -->
-    <section class="system-section">
+    <!-- Core Benefits -->
+    <section class="benefits">
         <div class="container">
-            <div class="system-content">
-                <div class="system-image">
-                    <img src="/images/digital-marketing-team.png" alt="Digital Marketing professionals" loading="lazy">
+            <h2>Why Choose Zinara</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Proven Results</h3>
+                    <p>Real revenue growth for African businesses. Average 5x growth in 12 months.</p>
                 </div>
-                <div class="system-text">
-                    <h2>Digital Marketing</h2>
-                    <p>24/7 content distribution reaching your ideal customers across all channels.</p>
-                    <ul class="benefits-list">
-                        <li>Multi-channel content strategy</li>
-                        <li>Automated lead generation</li>
-                        <li>Real-time performance tracking</li>
-                    </ul>
-                    <a href="/digital-marketing.html" class="btn btn-secondary">Learn More</a>
+                <div class="benefit-card">
+                    <h3>Expert Team</h3>
+                    <p>Industry veterans with 50+ years combined experience in digital transformation.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Complete System</h3>
+                    <p>Integrated solution covering marketing, AI, automation, and revenue optimization.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Local Expertise</h3>
+                    <p>Deep understanding of African markets and business challenges.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees. Clear ROI metrics. Pay for results, not promises.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support team available round-the-clock for your success.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AI Training System -->
-    <section class="system-section system-alt">
+    <!-- The Four Systems -->
+    <section class="systems" id="systems">
         <div class="container">
-            <div class="system-content system-reverse">
-                <div class="system-text">
-                    <h2>AI Training</h2>
-                    <p>Empower your team with AI skills to increase productivity by 10x.</p>
-                    <ul class="benefits-list">
-                        <li>Hands-on AI implementation</li>
-                        <li>Custom team training programs</li>
-                        <li>Ongoing support and updates</li>
-                    </ul>
-                    <a href="/ai-training.html" class="btn btn-secondary">Learn More</a>
+            <h2>Our Integrated Systems</h2>
+            <div class="systems-grid">
+                <!-- Digital Marketing -->
+                <div class="system-card">
+                    <div class="system-image">
+                        <img src="/images/hero-digital-marketing.png" alt="Digital Marketing dashboard showing analytics and metrics" loading="lazy">
+                    </div>
+                    <div class="system-content">
+                        <h3>Digital Marketing System</h3>
+                        <p>24/7 content distribution across all channels. Systematic lead generation and conversion optimization.</p>
+                        <ul class="system-benefits">
+                            <li>3.2x lead increase</li>
+                            <li>45% conversion improvement</li>
+                            <li>$2.1M average new revenue</li>
+                        </ul>
+                        <a href="/digital-marketing.html" class="btn btn-primary">Explore System</a>
+                    </div>
                 </div>
-                <div class="system-image">
-                    <img src="/images/ai-training-team.png" alt="AI Training session" loading="lazy">
+
+                <!-- AI Training -->
+                <div class="system-card">
+                    <div class="system-image">
+                        <img src="/images/hero-ai-training.png" alt="AI training classroom with professionals learning ChatGPT and automation" loading="lazy">
+                    </div>
+                    <div class="system-content">
+                        <h3>AI Training System</h3>
+                        <p>Transform your team into AI-powered operators. Hands-on training in ChatGPT, automation, and AI workflows.</p>
+                        <ul class="system-benefits">
+                            <li>10x productivity gains</li>
+                            <li>40 hours saved per month</li>
+                            <li>92% certification rate</li>
+                        </ul>
+                        <a href="/ai-training.html" class="btn btn-primary">Explore System</a>
+                    </div>
+                </div>
+
+                <!-- Automation -->
+                <div class="system-card">
+                    <div class="system-image">
+                        <img src="/images/hero-automation.png" alt="AI automation dashboard showing 90-second response time and workflow automation" loading="lazy">
+                    </div>
+                    <div class="system-content">
+                        <h3>Automation System</h3>
+                        <p>AI agents handling customer interactions 24/7. 90-second response time guarantee.</p>
+                        <ul class="system-benefits">
+                            <li>90-second response time</li>
+                            <li>80% manual work eliminated</li>
+                            <li>98% customer satisfaction</li>
+                        </ul>
+                        <a href="/automation.html" class="btn btn-primary">Explore System</a>
+                    </div>
+                </div>
+
+                <!-- Revenue Audit -->
+                <div class="system-card">
+                    <div class="system-image">
+                        <img src="/images/hero-audit.png" alt="Revenue analysis presentation with growth metrics and financial projections" loading="lazy">
+                    </div>
+                    <div class="system-content">
+                        <h3>Revenue Audit System</h3>
+                        <p>Deep analysis of your revenue infrastructure. 90-day action plan for optimization.</p>
+                        <ul class="system-benefits">
+                            <li>90-day action plan</li>
+                            <li>$500K+ average opportunity identified</li>
+                            <li>20% average revenue increase</li>
+                        </ul>
+                        <a href="/audit.html" class="btn btn-primary">Explore System</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Automation System -->
-    <section class="system-section">
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <div class="system-content">
-                <div class="system-image">
-                    <img src="/images/automation-workflow.png" alt="Automation workflow dashboard" loading="lazy">
+            <h2>How It Works</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Free Audit</h3>
+                    <p>We analyze your current revenue infrastructure and identify opportunities.</p>
                 </div>
-                <div class="system-text">
-                    <h2>Automation</h2>
-                    <p>Eliminate manual work with intelligent automation. 90-second response time to every lead.</p>
-                    <ul class="benefits-list">
-                        <li>Intelligent workflow automation</li>
-                        <li>Lead nurturing sequences</li>
-                        <li>Performance optimization</li>
-                    </ul>
-                    <a href="/automation.html" class="btn btn-secondary">Learn More</a>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Strategy</h3>
+                    <p>Custom 90-day action plan tailored to your business goals.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Revenue Audit System -->
-    <section class="system-section system-alt">
-        <div class="container">
-            <div class="system-content system-reverse">
-                <div class="system-text">
-                    <h2>Revenue Audit</h2>
-                    <p>Comprehensive analysis with a 90-day action plan to unlock your revenue potential.</p>
-                    <ul class="benefits-list">
-                        <li>Deep revenue analysis</li>
-                        <li>Growth opportunity identification</li>
-                        <li>Actionable implementation roadmap</li>
-                    </ul>
-                    <a href="/audit.html" class="btn btn-secondary">Learn More</a>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Implementation</h3>
+                    <p>Our team installs and optimizes each system for maximum impact.</p>
                 </div>
-                <div class="system-image">
-                    <img src="/images/audit-analysis.png" alt="Revenue audit analysis" loading="lazy">
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Results</h3>
+                    <p>Predictable revenue growth with 24/7 monitoring and optimization.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Customer Success Stories (Brief Testimonials) -->
+    <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
             <h2>What Our Clients Say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"Zinara transformed how we approach digital marketing. We saw 5x revenue growth in just 6 months."</p>
-                    <p class="testimonial-author">Sarah Okonkwo</p>
-                    <p class="testimonial-company">CEO, TechFlow Solutions</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Zinara transformed our revenue infrastructure. We saw 5.2x growth in just 12 months. Their team is exceptional."</p>
+                    <p class="testimonial-author">Sarah Kimani, CEO - TechFlow Solutions</p>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"The AI training program gave our team the skills to compete at the highest level. Highly recommended."</p>
-                    <p class="testimonial-author">James Mutua</p>
-                    <p class="testimonial-company">Director, GrowthHub Agency</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The AI training alone was worth it. Our team is now 10x more productive. Highly recommended."</p>
+                    <p class="testimonial-author">James Okonkwo, Director - GrowthHub Agency</p>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"Automation saved us 80% of manual work. We now focus on strategy instead of operations."</p>
-                    <p class="testimonial-author">Grace Kipchoge</p>
-                    <p class="testimonial-company">Founder, RetailMax Inc</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best investment we made. The automation system handles 90% of our customer interactions now."</p>
+                    <p class="testimonial-author">Amara Mensah, Founder - RetailMax Inc</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ -->
     <section class="faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <details class="faq-item">
-                    <summary>How quickly will I see results?</summary>
-                    <p>Most clients see measurable results within 30 days. Our 90-day audit provides a complete roadmap for sustained growth.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>What's included in the free audit?</summary>
-                    <p>A comprehensive analysis of your current systems, revenue gaps, and a detailed 90-day action plan tailored to your business.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>Do you work with businesses of all sizes?</summary>
-                    <p>Yes. We've successfully worked with startups, SMEs, and enterprises across various industries.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>Is there ongoing support after implementation?</summary>
-                    <p>Absolutely. We provide continuous support, training, and optimization to ensure your success.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>How do I get started?</summary>
-                    <p>Click "Start Free Audit" to schedule a consultation. We'll discuss your goals and create a customized plan.</p>
-                </details>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does implementation take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most implementations are completed within 90 days. The timeline depends on your business complexity and team readiness.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What's the ROI?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our clients average 5x revenue growth within 12 months. Most see positive ROI within 90 days of implementation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you work with startups?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We work with businesses at all stages. Our solutions scale from startup to enterprise.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What support do you provide?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>24/7 support including training, optimization, and strategic guidance. Your success is our priority.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -217,27 +359,22 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Join 500+ companies building predictable revenue systems with Zinara.</p>
-            <a href="/get-started.html" class="btn btn-primary btn-large">Start Your Free Audit Today</a>
+            <h2>Ready to Transform Your Revenue?</h2>
+            <p>Join 500+ African businesses already using Zinara to build predictable revenue systems.</p>
+            <a href="/audit.html" class="btn btn-primary btn-large">Start Your Free Audit Today</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-logo">
+                <img src="/images/zinara-logo.png" alt="Zinara Digital Systems Logo" width="50" height="50">
+                <h3>Zinara Digital Systems</h3>
+            </div>
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Zinara Digital Systems</h3>
-                    <p>Building predictable revenue systems for African businesses.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Product</h4>
+                    <h4>Solutions</h4>
                     <ul>
                         <li><a href="/digital-marketing.html">Digital Marketing</a></li>
                         <li><a href="/ai-training.html">AI Training</a></li>
@@ -251,12 +388,22 @@
                         <li><a href="/about.html">About Us</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                         <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: info@zinara.co.ke</p>
-                    <p>Phone: +254 798 859 452</p>
+                    <p>Email: <a href="mailto:info@zinara.co.ke">info@zinara.co.ke</a></p>
+                    <p>Phone: <a href="tel:+254798859452">+254 798 859 452</a></p>
+                    <p>Location: Nairobi, Kenya</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/zinaradigital" aria-label="Facebook">f</a>
+                        <a href="https://linkedin.com/company/zinara-digital" aria-label="LinkedIn">in</a>
+                        <a href="https://twitter.com/zinaradigital" aria-label="Twitter">𝕏</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -265,6 +412,7 @@
         </div>
     </footer>
 
-    <script src="/js/nav.js"></script>
+    <!-- Scripts -->
+    <script src="/js/nav.js" defer></script>
 </body>
 </html>
