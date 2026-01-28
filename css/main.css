@@ -347,6 +347,89 @@ a:hover {
   font-weight: bold;
 }
 
+/* Benefits Section */
+.benefits-section {
+  padding: 5rem 0;
+  background-color: var(--surface-main);
+}
+
+.benefits-section h2 {
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: var(--surface-light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: all 200ms ease;
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.benefit-card h3 {
+  color: var(--navy-primary);
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Results Section */
+.results-section {
+  padding: 5rem 0;
+  background-color: var(--surface-light);
+}
+
+.results-section h2 {
+  margin-bottom: 3rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.result-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.result-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.result-card .result-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--orange-accent);
+  margin-bottom: 0.5rem;
+}
+
+.result-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
 /* Testimonials */
 .testimonials {
   padding: 5rem 0;
@@ -531,6 +614,13 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
   h1 {
     font-size: 2.5rem;
   }
