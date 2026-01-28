@@ -2,7 +2,7 @@
 
 :root {
   --navy-primary: #00043F;
-  --gold-accent: #f8cf40;
+  --gold-accent: #F5761A;
   --gray-muted: #8A8D91;
   --surface-soft: #E6E9F2;
   --surface-main: #FFFFFF;
@@ -234,10 +234,10 @@ nav a.active {
 .graphic-1 {
   width: 250px;
   height: 200px;
-  background: linear-gradient(135deg, var(--gold-accent) 0%, #f0b820 100%);
+  background: linear-gradient(135deg, var(--gold-accent) 0%, #F5761A 100%);
   top: 20px;
   left: 0;
-  box-shadow: 0 20px 40px rgba(248, 207, 64, 0.3);
+  box-shadow: 0 20px 40px rgba(245, 118, 26, 0.3);
 }
 
 .graphic-2 {
@@ -252,10 +252,10 @@ nav a.active {
 .graphic-3 {
   width: 180px;
   height: 150px;
-  background: linear-gradient(135deg, rgba(248, 207, 64, 0.2) 0%, rgba(248, 207, 64, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(245, 118, 26, 0.2) 0%, rgba(245, 118, 26, 0.05) 100%);
   bottom: 30px;
   left: 50%;
-  box-shadow: 0 10px 20px rgba(248, 207, 64, 0.2);
+  box-shadow: 0 10px 20px rgba(245, 118, 26, 0.2);
 }
 
 /* Container */
@@ -311,13 +311,13 @@ section > .container > p:first-of-type {
 .btn-primary {
   background-color: var(--gold-accent);
   color: var(--navy-primary);
-  box-shadow: 0 4px 12px rgba(248, 207, 64, 0.3);
+  box-shadow: 0 4px 12px rgba(245, 118, 26, 0.3);
 }
 
 .btn-primary:hover {
   background-color: #f0c230;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(248, 207, 64, 0.4);
+  box-shadow: 0 8px 20px rgba(245, 118, 26, 0.4);
 }
 
 .btn-primary:active {
@@ -376,7 +376,7 @@ section > .container > p:first-of-type {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--gold-accent) 0%, #f0b820 100%);
+  background: linear-gradient(135deg, var(--gold-accent) 0%, #F5761A 100%);
   color: white;
   border-radius: 8px;
   font-weight: 700;
@@ -401,7 +401,13 @@ section > .container > p:first-of-type {
 .grid {
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@supports (grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
 }
 
 .grid-2 {
@@ -576,9 +582,21 @@ footer a:hover {
 
 .proof-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .proof-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .proof-item {
@@ -628,8 +646,20 @@ footer a:hover {
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .benefit-card {
@@ -735,8 +765,20 @@ footer a:hover {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .metric-card {
@@ -791,8 +833,20 @@ footer a:hover {
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .process-step {
@@ -817,7 +871,7 @@ footer a:hover {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--gold-accent) 0%, #f0b820 100%);
+  background: linear-gradient(135deg, var(--gold-accent) 0%, #F5761A 100%);
   color: white;
   border-radius: 50%;
   font-weight: 700;
@@ -859,9 +913,21 @@ footer a:hover {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pricing-card {
@@ -967,9 +1033,21 @@ footer a:hover {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .testimonial {
@@ -1208,5 +1286,140 @@ footer a:hover {
 
   .final-cta p {
     font-size: 1rem;
+  }
+}
+
+
+/* Case Studies Section */
+.case-studies-section {
+  background: white;
+  padding: 5rem 0;
+}
+
+.case-studies-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--navy-primary);
+}
+
+.case-studies-section > .container > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.case-study-card {
+  padding: 2.5rem;
+  background: var(--surface-soft);
+  border-radius: 8px;
+  border-left: 4px solid var(--gold-accent);
+  transition: all 250ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.case-study-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 4, 63, 0.1);
+}
+
+.case-study-header {
+  border-bottom: 2px solid rgba(245, 118, 26, 0.2);
+  padding-bottom: 1rem;
+}
+
+.case-study-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--navy-primary);
+  font-size: 1.5rem;
+}
+
+.company-size {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.case-study-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 6px;
+}
+
+.metric {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gold-accent);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.case-study-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.case-study-quote {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--gold-accent);
+}
+
+.case-study-quote p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.case-study-quote p:last-child {
+  margin: 0;
+}
+
+.quote-author {
+  color: var(--navy-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive Case Studies */
+@media (max-width: 768px) {
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-metrics {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .metric-number {
+    font-size: 1.5rem;
   }
 }
