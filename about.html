@@ -10,68 +10,105 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
+  <nav class="navbar">
     <div class="container">
-      <a href="/" class="logo">Zinara</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/system.html">System Architecture</a></li>
-        <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-        <li><a href="/ai-training.html">AI Training</a></li>
-        <li><a href="/automation.html">Automation</a></li>
-        <li><a href="/audit.html">Audit</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
-      </ul>
+        <div class="nav-brand">
+            <a href="/">
+                <span class="logo">Zinara</span>
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/system.html">System Architecture</a></li>
+            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+            <li><a href="/ai-training.html">AI Training</a></li>
+            <li><a href="/automation.html">Automation</a></li>
+            <li><a href="/audit.html">Revenue Audit</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/get-started.html" class="btn btn-primary">Start Free Audit</a></li>
+        </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>About Zinara</h1>
-      <p>We build predictable revenue systems with AI. Our mission is to help businesses transform how they generate demand, build capability, and execute operations.</p>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>About Zinara</h1>
+            <p>We build predictable revenue systems with AI. Our mission is to help businesses transform how they generate demand, build capability, and execute operations.</p>
+            <div class="hero-ctas">
+                <a href="/get-started.html" class="btn btn-primary btn-large">Start Free Audit</a>
+                <a href="#mission" class="btn btn-secondary btn-large">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/about-hero.png" alt="Zinara Digital diverse leadership team collaborating on revenue systems" loading="lazy">
+        </div>
     </div>
   </section>
 
-  <!-- Mission -->
-  <section>
+  <!-- Mission Section -->
+  <section class="features-section" id="mission">
     <div class="container">
       <h2>Our Mission</h2>
-      <p>To empower businesses with integrated revenue systems that leverage AI for sustainable, predictable growth. We believe revenue doesn't come from luck—it comes from systems.</p>
-      
-      <div class="grid-2">
-        <div>
-          <h3>The Problem</h3>
-          <p>Most businesses optimize individual functions—marketing, sales, operations—in isolation. The result is inefficiency, inconsistency, and unpredictable revenue. They lack an integrated system.</p>
-        </div>
-        
-        <div>
-          <h3>Our Solution</h3>
-          <p>Zinara provides four integrated layers that work together: Digital Marketing generates demand, AI Training builds capability, Automation executes operations, and Revenue Audit identifies failures. Together, they create predictable revenue systems.</p>
-        </div>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">To empower businesses with integrated revenue systems that leverage AI for sustainable, predictable growth. We believe revenue doesn't come from luck—it comes from systems.</p>
+
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>The Problem</h3>
+                  <p>Most businesses optimize individual functions—marketing, sales, operations—in isolation. The result is inefficiency, inconsistency, and unpredictable revenue. They lack an integrated system.</p>
+                  <p>Teams work in silos. Marketing generates leads, but sales doesn't follow up consistently. Operations run manually. Customer service is reactive. No one function strengthens the others. The entire organization suffers.</p>
+              </div>
+              <div class="system-image">
+                  <img src="/images/mission-vision.png" alt="Zinara Digital mission statement and collaborative team discussion" loading="lazy">
+              </div>
+          </div>
+      </div>
+
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Our Solution</h3>
+                  <p>Zinara provides four integrated layers that work together to create predictable revenue systems:</p>
+                  <ul class="benefits-list">
+                      <li><strong>Digital Marketing</strong> generates qualified demand</li>
+                      <li><strong>AI Training</strong> builds team capability</li>
+                      <li><strong>Automation</strong> executes operations at scale</li>
+                      <li><strong>Revenue Audit</strong> identifies and fixes failures</li>
+                  </ul>
+                  <p>Together, these layers create a system where each strengthens the others. The result is predictable, scalable revenue growth.</p>
+              </div>
+              <div class="system-image">
+                  <img src="/images/systems-thinking-new.png" alt="Zinara Digital integrated system architecture and layer collaboration" loading="lazy">
+              </div>
+          </div>
       </div>
     </div>
   </section>
 
-  <!-- Values -->
-  <section class="alt">
+  <!-- Values Section -->
+  <section class="benefits-section">
     <div class="container">
-      <h2>Our Values</h2>
-      
-      <div class="grid-3">
-        <div>
+      <h2>Our Core Values</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
           <h3>Systems Thinking</h3>
           <p>Revenue comes from integrated systems, not isolated functions. We design for the whole, not the parts.</p>
         </div>
         
-        <div>
+        <div class="benefit-card">
           <h3>AI-First Approach</h3>
           <p>AI is not optional. It's the foundation. Every layer is powered by AI to drive efficiency and scale.</p>
         </div>
         
-        <div>
+        <div class="benefit-card">
           <h3>Predictable Results</h3>
           <p>We don't promise shortcuts. We build systems that deliver measurable, repeatable, predictable results.</p>
         </div>
@@ -79,86 +116,83 @@
     </div>
   </section>
 
-  <!-- Approach -->
-  <section>
+  <!-- Approach Section -->
+  <section class="features-section">
     <div class="container">
       <h2>Our Approach</h2>
-      <p>We start with a diagnostic audit to understand your current revenue system. Then we build and implement the four layers in the right sequence, ensuring each layer strengthens the others.</p>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">We start with a diagnostic audit to understand your current revenue system. Then we build and implement the four layers in the right sequence, ensuring each layer strengthens the others.</p>
       
-      <div class="grid-4">
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;">1</div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="stat-number">1</div>
           <h3>Audit</h3>
-          <p>Diagnose your revenue system</p>
+          <p>Diagnose your revenue system and identify failures</p>
         </div>
         
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;">2</div>
+        <div class="benefit-card">
+          <div class="stat-number">2</div>
           <h3>Design</h3>
-          <p>Design your integrated system</p>
+          <p>Design your integrated system architecture</p>
         </div>
         
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;">3</div>
+        <div class="benefit-card">
+          <div class="stat-number">3</div>
           <h3>Build</h3>
           <p>Build each layer systematically</p>
         </div>
         
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;">4</div>
+        <div class="benefit-card">
+          <div class="stat-number">4</div>
           <h3>Scale</h3>
-          <p>Scale revenue predictably</p>
+          <p>Scale revenue predictably and sustainably</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section style="background-color: var(--navy-primary); color: var(--text-on-dark); text-align: center;">
+  <section class="final-cta">
     <div class="container">
-      <h2 style="color: var(--text-on-dark);">Learn More About Our System</h2>
-      <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 1rem auto 2rem; font-size: 1.1rem;">
-        Explore how our four integrated layers work together to create predictable revenue.
-      </p>
-      <a href="/system.html" class="btn btn-primary">View System Architecture</a>
+      <h2>Learn More About Our System</h2>
+      <p>Explore how our four integrated layers work together to create predictable revenue.</p>
+      <a href="/system.html" class="btn btn-primary btn-large">View System Architecture</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div>
-        <h4>Zinara</h4>
-        <p>Building revenue systems with AI</p>
-      </div>
-      <div>
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-          <li><a href="/ai-training.html">AI Training</a></li>
-          <li><a href="/automation.html">Automation</a></li>
-          <li><a href="/audit.html">Audit</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="/system.html">System Architecture</a></li>
-          <li><a href="/get-started.html">Get Started</a></li>
-          <li><a href="/audit.html">Revenue Audit</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zinara Digital Systems</h3>
+                <p>Building predictable revenue systems for African businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="/ai-training.html">AI Training</a></li>
+                    <li><a href="/automation.html">Automation</a></li>
+                    <li><a href="/audit.html">Revenue Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@zinara.co.ke</p>
+                <p>Phone: +254 798 859 452</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        </div>
     </div>
   </footer>
 
