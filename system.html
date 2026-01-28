@@ -10,219 +10,166 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
+  <nav class="navbar">
     <div class="container">
-      <a href="/" class="logo">Zinara</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/system.html">System Architecture</a></li>
-        <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-        <li><a href="/ai-training.html">AI Training</a></li>
-        <li><a href="/automation.html">Automation</a></li>
-        <li><a href="/audit.html">Audit</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
-      </ul>
+        <div class="nav-brand">
+            <a href="/">
+                <span class="logo">Zinara</span>
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+            <li><a href="/ai-training.html">AI Training</a></li>
+            <li><a href="/automation.html">Automation</a></li>
+            <li><a href="/audit.html">Revenue Audit</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/get-started.html" class="btn btn-primary">Start Free Audit</a></li>
+        </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>System Architecture</h1>
-      <p>Four integrated layers that work together to create predictable, scalable revenue systems.</p>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>System Architecture</h1>
+            <p>Four integrated layers that work together to create predictable, scalable revenue systems.</p>
+            <div class="hero-ctas">
+                <a href="/get-started.html" class="btn btn-primary btn-large">Start Free Audit</a>
+                <a href="#layers" class="btn btn-secondary btn-large">Explore Layers</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/hero-main.png" alt="Zinara System Architecture Overview" loading="lazy">
+        </div>
     </div>
   </section>
 
   <!-- Overview -->
-  <section>
+  <section class="benefits-section" id="layers">
     <div class="container">
       <h2>The Four Integrated Layers</h2>
-      <p>Revenue doesn't come from isolated functions. It comes from integrated systems. Zinara's architecture is built on four layers that strengthen each other.</p>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Revenue doesn't come from isolated functions. It comes from integrated systems. Zinara's architecture is built on four layers that strengthen each other.</p>
       
-      <div class="grid">
-        <div class="card">
+      <div class="benefits-grid">
+        <div class="benefit-card">
           <h3>Layer 1: Digital Marketing</h3>
           <p>The Intent Generation Engine. Build authority, generate qualified demand, and acquire customers through integrated digital marketing systems.</p>
-          <a href="/digital-marketing.html" style="display: inline-block; margin-top: 1rem; color: var(--navy-primary); font-weight: 600;">Learn more →</a>
+          <a href="/digital-marketing.html" style="display: inline-block; margin-top: 1rem; color: var(--orange-accent); font-weight: 600;">Learn more →</a>
         </div>
         
-        <div class="card">
+        <div class="benefit-card">
           <h3>Layer 2: AI Training</h3>
           <p>The Capability Engine. Transform your team into super-powered operators with strategic AI training and certification programs.</p>
-          <a href="/ai-training.html" style="display: inline-block; margin-top: 1rem; color: var(--navy-primary); font-weight: 600;">Learn more →</a>
+          <a href="/ai-training.html" style="display: inline-block; margin-top: 1rem; color: var(--orange-accent); font-weight: 600;">Learn more →</a>
         </div>
         
-        <div class="card">
+        <div class="benefit-card">
           <h3>Layer 3: Automation</h3>
           <p>The System Control Engine. Automate revenue operations with AI agents and achieve 90-second response times.</p>
-          <a href="/automation.html" style="display: inline-block; margin-top: 1rem; color: var(--navy-primary); font-weight: 600;">Learn more →</a>
+          <a href="/automation.html" style="display: inline-block; margin-top: 1rem; color: var(--orange-accent); font-weight: 600;">Learn more →</a>
         </div>
         
-        <div class="card">
+        <div class="benefit-card">
           <h3>Layer 4: Revenue Audit</h3>
           <p>The Diagnostic Entry Point. Identify failures and get a roadmap to revenue recovery.</p>
-          <a href="/audit.html" style="display: inline-block; margin-top: 1rem; color: var(--navy-primary); font-weight: 600;">Learn more →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="alt">
-    <div class="container">
-      <h2>How the System Works</h2>
-      
-      <div class="grid-4">
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">1</div>
-          <h3>Audit</h3>
-          <p>Diagnose your revenue system and identify failures</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">2</div>
-          <h3>Design</h3>
-          <p>Design your integrated system based on audit findings</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">3</div>
-          <h3>Build</h3>
-          <p>Implement each layer systematically</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">4</div>
-          <h3>Scale</h3>
-          <p>Scale revenue predictably and sustainably</p>
+          <a href="/audit.html" style="display: inline-block; margin-top: 1rem; color: var(--orange-accent); font-weight: 600;">Learn more →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Core Principles -->
-  <section>
+  <section class="features-section">
     <div class="container">
       <h2>Core Principles</h2>
       
-      <div class="grid-2">
-        <div>
-          <h3>Systems Thinking</h3>
-          <p>Revenue comes from integrated systems, not isolated functions. Each layer strengthens the others. The result is a system that scales predictably.</p>
-        </div>
-        
-        <div>
-          <h3>AI-First Approach</h3>
-          <p>Every layer is powered by AI. From content creation to lead qualification to customer service, AI handles execution while your team focuses on strategy.</p>
-        </div>
-        
-        <div>
-          <h3>Diagnostic Foundation</h3>
-          <p>We start with a comprehensive audit to understand your current system. This diagnostic foundation ensures we build the right system for your business.</p>
-        </div>
-        
-        <div>
-          <h3>Predictable Results</h3>
-          <p>We don't promise shortcuts. We build systems that deliver measurable, repeatable, predictable results. Revenue grows systematically, not randomly.</p>
-        </div>
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Systems Thinking</h3>
+                  <p>Revenue comes from integrated systems, not isolated functions. Each layer strengthens the others. The result is a system that scales predictably.</p>
+                  <ul class="benefits-list">
+                      <li>Integrated functional layers</li>
+                      <li>Compound growth effects</li>
+                      <li>Predictable scaling path</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/team-collaboration.png" alt="Systems thinking and collaboration" loading="lazy">
+              </div>
+          </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Integration Points -->
-  <section class="alt">
-    <div class="container">
-      <h2>How Layers Integrate</h2>
-      <p>Each layer depends on the previous one and strengthens the next. This integration creates compounding value.</p>
-      
-      <div style="margin-top: 3rem;">
-        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center; margin-bottom: 2rem;">
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>Digital Marketing</h3>
-            <p>Generates demand and qualified leads</p>
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>AI-First Approach</h3>
+                  <p>Every layer is powered by AI. From content creation to lead qualification to customer service, AI handles execution while your team focuses on strategy.</p>
+                  <ul class="benefits-list">
+                      <li>AI-driven execution</li>
+                      <li>Strategic human oversight</li>
+                      <li>Scalable operational model</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/ai-training-team.png" alt="AI-first approach in business" loading="lazy">
+              </div>
           </div>
-          <div style="text-align: center; font-size: 1.5rem; color: var(--gold-accent); font-weight: 700;">→</div>
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>AI Training</h3>
-            <p>Equips team to handle leads</p>
-          </div>
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center; margin-bottom: 2rem;">
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>AI Training</h3>
-            <p>Builds capability for execution</p>
-          </div>
-          <div style="text-align: center; font-size: 1.5rem; color: var(--gold-accent); font-weight: 700;">→</div>
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>Automation</h3>
-            <p>Automates what team learned</p>
-          </div>
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center;">
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>Automation</h3>
-            <p>Executes operations consistently</p>
-          </div>
-          <div style="text-align: center; font-size: 1.5rem; color: var(--gold-accent); font-weight: 700;">→</div>
-          <div style="background-color: var(--surface-soft); padding: 2rem; border-radius: var(--radius);">
-            <h3>Revenue Audit</h3>
-            <p>Measures and optimizes results</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section style="background-color: var(--navy-primary); color: var(--text-on-dark); text-align: center;">
+  <section class="final-cta">
     <div class="container">
-      <h2 style="color: var(--text-on-dark);">Ready to Build Your System?</h2>
-      <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 1rem auto 2rem; font-size: 1.1rem;">
-        Start with a free diagnostic audit to understand your current system and get your recovery roadmap.
-      </p>
-      <a href="/audit.html" class="btn btn-primary">Start Free Audit</a>
+      <h2>Ready to Build Your System?</h2>
+      <p>Start with a free diagnostic audit to understand your current system and get your recovery roadmap.</p>
+      <a href="/get-started.html" class="btn btn-primary btn-large">Start Free Audit</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div>
-        <h4>Zinara</h4>
-        <p>Building revenue systems with AI</p>
-      </div>
-      <div>
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-          <li><a href="/ai-training.html">AI Training</a></li>
-          <li><a href="/automation.html">Automation</a></li>
-          <li><a href="/audit.html">Audit</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="/system.html">System Architecture</a></li>
-          <li><a href="/get-started.html">Get Started</a></li>
-          <li><a href="/audit.html">Revenue Audit</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zinara Digital Systems</h3>
+                <p>Building predictable revenue systems for African businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="/ai-training.html">AI Training</a></li>
+                    <li><a href="/automation.html">Automation</a></li>
+                    <li><a href="/audit.html">Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@zinara.co.ke</p>
+                <p>Phone: +254 798 859 452</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        </div>
     </div>
   </footer>
 

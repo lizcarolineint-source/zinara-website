@@ -10,53 +10,66 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
+  <nav class="navbar">
     <div class="container">
-      <a href="/" class="logo">Zinara</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/system.html">System Architecture</a></li>
-        <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-        <li><a href="/ai-training.html">AI Training</a></li>
-        <li><a href="/automation.html">Automation</a></li>
-        <li><a href="/audit.html">Audit</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
-      </ul>
+        <div class="nav-brand">
+            <a href="/">
+                <span class="logo">Zinara</span>
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+            <li><a href="/ai-training.html">AI Training</a></li>
+            <li><a href="/automation.html">Automation</a></li>
+            <li><a href="/audit.html" class="active">Revenue Audit</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/get-started.html" class="btn btn-primary">Start Free Audit</a></li>
+        </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>Revenue Audit</h1>
-      <p>Identify demand, capture, system, capability, and continuity failures. Get a roadmap to revenue recovery.</p>
-      <div class="hero-actions">
-        <a href="#audit-categories" class="btn btn-primary">Start Your Audit</a>
-        <a href="/contact.html" class="btn btn-secondary">Schedule Call</a>
-      </div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Revenue Audit: The Diagnostic Entry Point</h1>
+            <p>Identify demand, capture, system, capability, and continuity failures. Get a clear roadmap to revenue recovery and scalable growth.</p>
+            <div class="hero-ctas">
+                <a href="/get-started.html" class="btn btn-primary btn-large">Start Your Audit</a>
+                <a href="/contact.html" class="btn btn-secondary btn-large">Schedule Call</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/hero-audit.png" alt="Revenue audit and diagnostic analysis visualization" loading="lazy">
+        </div>
     </div>
   </section>
 
   <!-- Overview -->
-  <section>
+  <section class="benefits-section">
     <div class="container">
-      <h2>The Diagnostic Entry Point</h2>
-      <p>The Revenue Audit is where every engagement begins. It identifies where your revenue system is failing and provides a clear roadmap to recovery and growth.</p>
+      <h2>The Diagnostic Foundation</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">The Revenue Audit is where every engagement begins. It identifies where your revenue system is failing and provides a clear roadmap to recovery and growth.</p>
       
-      <div class="grid-3">
-        <div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
           <h3>Identify Failures</h3>
           <p>We diagnose failures across six critical categories to understand exactly where your revenue system is breaking down.</p>
         </div>
         
-        <div>
+        <div class="benefit-card">
           <h3>Quantify Impact</h3>
           <p>We calculate the revenue impact of each failure so you understand exactly how much revenue you're leaving on the table.</p>
         </div>
         
-        <div>
+        <div class="benefit-card">
           <h3>Create Roadmap</h3>
           <p>We provide a prioritized roadmap with quick wins, 12-month plan, and implementation timeline.</p>
         </div>
@@ -65,224 +78,157 @@
   </section>
 
   <!-- Audit Categories -->
-  <section class="alt" id="audit-categories">
-    <div class="container" style="max-width: 900px;">
+  <section class="features-section" id="audit-categories">
+    <div class="container">
       <h2>Six Diagnostic Categories</h2>
-      <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Click each category to explore the diagnostic questions</p>
       
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>Demand Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Are people aware of your business and interested in what you offer?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>Do you have consistent lead flow?</li>
-            <li>Is your brand recognized in your market?</li>
-            <li>Are your marketing channels effective?</li>
-            <li>Do you understand your target audience?</li>
-            <li>Is your value proposition clear?</li>
-          </ul>
-        </div>
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Demand Failure</h3>
+                  <p>Are people aware of your business and interested in what you offer? We evaluate your market visibility and lead flow consistency.</p>
+                  <ul class="benefits-list">
+                      <li>Lead flow consistency analysis</li>
+                      <li>Brand recognition assessment</li>
+                      <li>Marketing channel effectiveness</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/digital-marketing-section.png" alt="Demand failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>Capture Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Are you converting interested prospects into qualified leads?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>Is your website optimized for conversions?</li>
-            <li>Do you have clear calls-to-action?</li>
-            <li>Are you capturing lead data effectively?</li>
-            <li>What's your conversion rate?</li>
-            <li>Do you have lead qualification criteria?</li>
-          </ul>
-        </div>
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Capture Failure</h3>
+                  <p>Are you converting interested prospects into qualified leads? We analyze your conversion optimization and data capture processes.</p>
+                  <ul class="benefits-list">
+                      <li>Conversion rate optimization audit</li>
+                      <li>Lead data capture effectiveness</li>
+                      <li>Qualification criteria evaluation</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/audit-analysis.png" alt="Capture failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>System Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Are your revenue operations running efficiently and predictably?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>Are your systems integrated and automated?</li>
-            <li>Do you have visibility into your pipeline?</li>
-            <li>Are processes documented and repeatable?</li>
-            <li>Is there accountability for results?</li>
-            <li>Can you scale without adding headcount?</li>
-          </ul>
-        </div>
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>System Failure</h3>
+                  <p>Are your revenue operations running efficiently and predictably? We audit your integration, automation, and process documentation.</p>
+                  <ul class="benefits-list">
+                      <li>Automation and integration audit</li>
+                      <li>Pipeline visibility assessment</li>
+                      <li>Process repeatability check</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/automation-section.png" alt="System failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>Capability Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Does your team have the skills to execute your revenue strategy?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>Does your team understand AI and automation?</li>
-            <li>Are team members trained in their roles?</li>
-            <li>Do you have the right people in place?</li>
-            <li>Is there a culture of continuous learning?</li>
-            <li>Can your team execute at scale?</li>
-          </ul>
-        </div>
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Capability Failure</h3>
+                  <p>Does your team have the skills to execute your revenue strategy? We assess AI proficiency and continuous learning culture.</p>
+                  <ul class="benefits-list">
+                      <li>Team AI proficiency assessment</li>
+                      <li>Training and skill-gap analysis</li>
+                      <li>Execution capability evaluation</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/ai-training-section.png" alt="Capability failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>Continuity Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Are you retaining customers and building long-term value?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>What's your customer retention rate?</li>
-            <li>Do you have recurring revenue models?</li>
-            <li>Are customers getting ongoing value?</li>
-            <li>Do you have upsell and expansion strategies?</li>
-            <li>What's your customer lifetime value?</li>
-          </ul>
-        </div>
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Continuity Failure</h3>
+                  <p>Are you retaining customers and building long-term value? We evaluate retention rates and recurring revenue models.</p>
+                  <ul class="benefits-list">
+                      <li>Customer retention analysis</li>
+                      <li>LTV and expansion strategy audit</li>
+                      <li>Recurring revenue model evaluation</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/case-study-success.png" alt="Continuity failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
 
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span>Authority Failure</span>
-          <span class="accordion-toggle">▼</span>
-        </div>
-        <div class="accordion-content">
-          <p>Are you positioned as the trusted authority in your market?</p>
-          <p style="color: var(--text-muted); font-weight: 600; margin-top: 1rem;">Key Questions:</p>
-          <ul>
-            <li>Are you recognized as an expert?</li>
-            <li>Do you publish thought leadership content?</li>
-            <li>Do customers trust your brand?</li>
-            <li>Are you winning against competitors?</li>
-            <li>Do prospects seek you out?</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Audit Process -->
-  <section>
-    <div class="container">
-      <h2>The Audit Process</h2>
-      
-      <div class="grid-4">
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">1</div>
-          <h3>Assessment</h3>
-          <p>Complete diagnostic questionnaire across all six categories</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">2</div>
-          <h3>Analysis</h3>
-          <p>Deep analysis of your revenue system and failure points</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">3</div>
-          <h3>Roadmap</h3>
-          <p>Receive a prioritized roadmap for revenue recovery</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">4</div>
-          <h3>Strategy</h3>
-          <p>Develop implementation strategy with Zinara team</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What You'll Discover -->
-  <section class="alt">
-    <div class="container">
-      <h2>What You'll Discover</h2>
-      
-      <div class="grid-3">
-        <div>
-          <h3>Revenue Leaks</h3>
-          <p>Identify exactly where revenue is leaking and how much you're losing to each failure category.</p>
-        </div>
-        
-        <div>
-          <h3>Quick Wins</h3>
-          <p>Discover immediate actions that can increase revenue within 30 days without major investment.</p>
-        </div>
-        
-        <div>
-          <h3>Growth Path</h3>
-          <p>Get a clear roadmap to 3-5x revenue growth within 12 months of implementation.</p>
-        </div>
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Authority Failure</h3>
+                  <p>Are you positioned as the trusted authority in your market? We assess thought leadership and competitive positioning.</p>
+                  <ul class="benefits-list">
+                      <li>Market authority assessment</li>
+                      <li>Thought leadership content audit</li>
+                      <li>Competitive positioning analysis</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/revenue-audit-section.png" alt="Authority failure diagnostic" loading="lazy">
+              </div>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section style="background-color: var(--navy-primary); color: var(--text-on-dark); text-align: center;">
+  <section class="final-cta">
     <div class="container">
-      <h2 style="color: var(--text-on-dark);">Ready for Your Revenue Audit?</h2>
-      <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 1rem auto 2rem; font-size: 1.1rem;">
-        Get a free diagnostic audit and discover your revenue recovery roadmap.
-      </p>
-      <a href="/contact.html" class="btn btn-primary">Schedule Your Free Audit</a>
+      <h2>Ready for Your Revenue Audit?</h2>
+      <p>Get a free diagnostic audit and discover your revenue recovery roadmap.</p>
+      <a href="/get-started.html" class="btn btn-primary btn-large">Schedule Your Free Audit</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div>
-        <h4>Zinara</h4>
-        <p>Building revenue systems with AI</p>
-      </div>
-      <div>
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-          <li><a href="/ai-training.html">AI Training</a></li>
-          <li><a href="/automation.html">Automation</a></li>
-          <li><a href="/audit.html">Audit</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="/system.html">System Architecture</a></li>
-          <li><a href="/get-started.html">Get Started</a></li>
-          <li><a href="/audit.html">Revenue Audit</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zinara Digital Systems</h3>
+                <p>Building predictable revenue systems for African businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="/ai-training.html">AI Training</a></li>
+                    <li><a href="/automation.html">Automation</a></li>
+                    <li><a href="/audit.html">Revenue Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@zinara.co.ke</p>
+                <p>Phone: +254 798 859 452</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        </div>
     </div>
   </footer>
 

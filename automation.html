@@ -10,90 +10,137 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
+  <nav class="navbar">
     <div class="container">
-      <a href="/" class="logo">Zinara</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/system.html">System Architecture</a></li>
-        <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-        <li><a href="/ai-training.html">AI Training</a></li>
-        <li><a href="/automation.html">Automation</a></li>
-        <li><a href="/audit.html">Audit</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html" class="nav-cta">Contact</a></li>
-      </ul>
+        <div class="nav-brand">
+            <a href="/">
+                <span class="logo">Zinara</span>
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+            <li><a href="/ai-training.html">AI Training</a></li>
+            <li><a href="/automation.html" class="active">Automation</a></li>
+            <li><a href="/audit.html">Revenue Audit</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/get-started.html" class="btn btn-primary">Start Free Audit</a></li>
+        </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>Automation</h1>
-      <p>Layer 3: The System Control Engine. Automate revenue operations with AI agents and achieve 90-second response times across all customer interactions.</p>
-      <div class="hero-actions">
-        <a href="/audit.html" class="btn btn-primary">Start Free Audit</a>
-        <a href="#systems" class="btn btn-secondary">Explore Systems</a>
-      </div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Layer 3: The System Control Engine</h1>
+            <p>Automate revenue operations with AI agents and achieve 90-second response times across all customer interactions.</p>
+            <div class="hero-ctas">
+                <a href="/get-started.html" class="btn btn-primary btn-large">Start Free Audit</a>
+                <a href="#systems" class="btn btn-secondary btn-large">Explore Systems</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/hero-automation.png" alt="AI automation and workflow management visualization" loading="lazy">
+        </div>
     </div>
   </section>
 
   <!-- Overview -->
-  <section>
+  <section class="benefits-section">
     <div class="container">
       <h2>The System Control Engine</h2>
-      <p>Automation is the execution engine that scales revenue operations without adding headcount. Powered by AI agents, it delivers consistent, predictable results 24/7.</p>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto;">Automation is the execution engine that scales revenue operations without adding headcount. Powered by AI agents, it delivers consistent, predictable results 24/7.</p>
     </div>
   </section>
 
   <!-- Three Sub-Systems -->
-  <section class="alt" id="systems">
+  <section class="features-section" id="systems">
     <div class="container">
       <h2>Three Sub-Systems</h2>
       
-      <div class="grid">
-        <div class="card">
-          <h3>Lead Qualification Agent</h3>
-          <p>AI agent that qualifies leads, scores them, and routes to sales in real-time. Achieves 90-second response time for all inbound inquiries.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Customer Service Agent</h3>
-          <p>24/7 AI customer service that handles inquiries, resolves issues, and escalates complex problems. Reduces support costs by 70%.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Revenue Operations Automation</h3>
-          <p>Automated workflows that manage pipeline, track metrics, generate reports, and optimize revenue operations without manual intervention.</p>
-        </div>
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Lead Qualification Agent</h3>
+                  <p>AI agent that qualifies leads, scores them, and routes to sales in real-time. Achieves 90-second response time for all inbound inquiries.</p>
+                  <ul class="benefits-list">
+                      <li>Instant lead scoring and qualification</li>
+                      <li>Real-time routing to sales teams</li>
+                      <li>Automated follow-up sequences</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/automation-section.png" alt="AI lead qualification agent workflow" loading="lazy">
+              </div>
+          </div>
+      </div>
+
+      <div class="system-section system-alt">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Customer Service Agent</h3>
+                  <p>24/7 AI customer service that handles inquiries, resolves issues, and escalates complex problems. Reduces support costs by 70%.</p>
+                  <ul class="benefits-list">
+                      <li>24/7 automated support handling</li>
+                      <li>Instant resolution for common issues</li>
+                      <li>Seamless human escalation path</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/automation-workflow.png" alt="AI customer service automation dashboard" loading="lazy">
+              </div>
+          </div>
+      </div>
+
+      <div class="system-section">
+          <div class="system-content">
+              <div class="system-text">
+                  <h3>Revenue Operations Automation</h3>
+                  <p>Automated workflows that manage pipeline, track metrics, generate reports, and optimize revenue operations without manual intervention.</p>
+                  <ul class="benefits-list">
+                      <li>Automated pipeline management</li>
+                      <li>Real-time revenue metrics tracking</li>
+                      <li>Hands-free operational reporting</li>
+                  </ul>
+              </div>
+              <div class="system-image">
+                  <img src="/images/digital-marketing-section.png" alt="Revenue operations automation visualization" loading="lazy">
+              </div>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- 90-Second Guarantee -->
-  <section>
+  <section class="benefits-section">
     <div class="container">
       <h2>The 90-Second Guarantee</h2>
       <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 2rem; font-size: 1.05rem;">
         Every customer interaction receives a response within 90 seconds. Whether it's a lead inquiry, support question, or sales opportunity, our AI agents ensure no customer is left waiting.
       </p>
       
-      <div class="grid-3">
-        <div style="text-align: center;">
-          <div style="font-size: 2rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">90s</div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="stat-number">90s</div>
           <h3>Response Time</h3>
           <p>Every interaction gets a response within 90 seconds</p>
         </div>
         
-        <div style="text-align: center;">
-          <div style="font-size: 2rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">24/7</div>
+        <div class="benefit-card">
+          <div class="stat-number">24/7</div>
           <h3>Availability</h3>
           <p>AI agents work around the clock, no downtime</p>
         </div>
         
-        <div style="text-align: center;">
-          <div style="font-size: 2rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">100%</div>
+        <div class="benefit-card">
+          <div class="stat-number">100%</div>
           <h3>Consistency</h3>
           <p>Every customer gets the same quality experience</p>
         </div>
@@ -101,141 +148,49 @@
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="alt">
-    <div class="container">
-      <h2>How Automation Works</h2>
-      
-      <div class="grid-4">
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">1</div>
-          <h3>Trigger</h3>
-          <p>Customer interaction initiates the workflow</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">2</div>
-          <h3>Process</h3>
-          <p>AI agent processes and analyzes the request</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">3</div>
-          <h3>Respond</h3>
-          <p>Agent responds within 90 seconds</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 1rem;">4</div>
-          <h3>Escalate</h3>
-          <p>Complex issues escalate to human team</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Key Metrics -->
-  <section>
-    <div class="container">
-      <h2>Impact and Results</h2>
-      
-      <div class="grid-3">
-        <div style="text-align: center;">
-          <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;"><span data-count="70">0</span>%</div>
-          <h3>Cost Reduction</h3>
-          <p>Reduce operational costs through automation</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;"><span data-count="5">0</span>x</div>
-          <h3>Throughput</h3>
-          <p>Handle 5x more interactions with same team</p>
-        </div>
-        
-        <div style="text-align: center;">
-          <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 0.5rem;"><span data-count="95">0</span>%</div>
-          <h3>Satisfaction</h3>
-          <p>Customer satisfaction scores increase</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Use Cases -->
-  <section class="alt">
-    <div class="container">
-      <h2>Common Use Cases</h2>
-      
-      <div class="grid-2">
-        <div>
-          <h3>Lead Qualification</h3>
-          <p>Automatically qualify leads based on criteria, score them, and route to sales. Ensures hot leads get immediate attention.</p>
-        </div>
-        
-        <div>
-          <h3>Customer Support</h3>
-          <p>Handle common support questions 24/7 with AI. Escalate complex issues to human agents. Reduce support ticket volume by 60%.</p>
-        </div>
-        
-        <div>
-          <h3>Email Campaigns</h3>
-          <p>Automated email sequences triggered by customer behavior. Personalized messaging at scale. Higher open and click rates.</p>
-        </div>
-        
-        <div>
-          <h3>Pipeline Management</h3>
-          <p>Automated pipeline updates, forecasting, and reporting. Real-time visibility into revenue metrics without manual data entry.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA Section -->
-  <section style="background-color: var(--navy-primary); color: var(--text-on-dark); text-align: center;">
+  <section class="final-cta">
     <div class="container">
-      <h2 style="color: var(--text-on-dark);">Ready to Automate Your Revenue Operations?</h2>
-      <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 1rem auto 2rem; font-size: 1.1rem;">
-        Get a free automation assessment to identify opportunities and calculate your ROI.
-      </p>
-      <a href="/audit.html" class="btn btn-primary">Get Your Free Assessment</a>
+      <h2>Ready to Automate Your Revenue Operations?</h2>
+      <p>Get a free automation assessment to identify opportunities and calculate your ROI.</p>
+      <a href="/get-started.html" class="btn btn-primary btn-large">Get Your Free Assessment</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div>
-        <h4>Zinara</h4>
-        <p>Building revenue systems with AI</p>
-      </div>
-      <div>
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-          <li><a href="/ai-training.html">AI Training</a></li>
-          <li><a href="/automation.html">Automation</a></li>
-          <li><a href="/audit.html">Audit</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="/system.html">System Architecture</a></li>
-          <li><a href="/get-started.html">Get Started</a></li>
-          <li><a href="/audit.html">Revenue Audit</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zinara Digital Systems</h3>
+                <p>Building predictable revenue systems for African businesses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="/ai-training.html">AI Training</a></li>
+                    <li><a href="/automation.html">Automation</a></li>
+                    <li><a href="/audit.html">Revenue Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@zinara.co.ke</p>
+                <p>Phone: +254 798 859 452</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
+        </div>
     </div>
   </footer>
 
