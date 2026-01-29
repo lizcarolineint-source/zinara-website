@@ -1,220 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Get Started with Zinara Digital Systems. Begin your journey to predictable revenue growth.">
-  <meta name="keywords" content="get started, revenue systems, digital marketing, AI training">
-  <title>Get Started - Zinara Digital Systems</title>
-  <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Zinara Digital Systems</title>
+    <meta name="description" content="Start your journey with Zinara Digital. Follow our simple process to transform your revenue infrastructure and achieve predictable growth.">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-        <div class="nav-brand">
-            <a href="/">
-                <span class="logo">Zinara</span>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital Logo">
             </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/digital-marketing.html">Marketing</a></li>
+                <li><a href="/ai-training.html">AI Training</a></li>
+                <li><a href="/automation.html">Automation</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/audit.html" class="btn btn-primary nav-cta">Free Audit</a></li>
+            </ul>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/system.html">System Architecture</a></li>
-            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-            <li><a href="/ai-training.html">AI Training</a></li>
-            <li><a href="/automation.html">Automation</a></li>
-            <li><a href="/audit.html">Revenue Audit</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/get-started.html" class="active btn btn-primary">Start Free Audit</a></li>
-        </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Get Started with Zinara</h1>
-            <p>Begin your journey to predictable revenue growth. Start with a free diagnostic audit to identify failures and create your recovery roadmap.</p>
-            <div class="hero-ctas">
-                <a href="#process" class="btn btn-primary btn-large">View Process</a>
-                <a href="/audit.html" class="btn btn-secondary btn-large">Schedule Audit</a>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Your Path to Predictable Revenue</h1>
+                <p>Follow our proven 4-step process to transform your business into a high-authority, automated revenue engine.</p>
+                <div class="hero-ctas">
+                    <a href="/audit.html" class="btn btn-primary btn-large">Start Step 1: Free Audit</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/get-started-hero.png" alt="Start Your Zinara Journey">
             </div>
         </div>
-        <div class="hero-image">
-            <img src="/images/get-started-hero.png" alt="Zinara Digital diverse team starting revenue system project" loading="lazy">
-        </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Getting Started Process -->
-  <section class="features-section" id="process">
-    <div class="container">
-      <h2>The Getting Started Process</h2>
-      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">We make it simple to get started with Zinara. Follow these four steps to begin building your revenue system.</p>
-      
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="stat-number">1</div>
-          <h3>Schedule Audit</h3>
-          <p>Book your free revenue audit. We'll assess your current system and identify failures.</p>
-        </div>
-        
-        <div class="benefit-card">
-          <div class="stat-number">2</div>
-          <h3>Receive Report</h3>
-          <p>Get a comprehensive audit report with findings and recommendations.</p>
-        </div>
-        
-        <div class="benefit-card">
-          <div class="stat-number">3</div>
-          <h3>Strategy Call</h3>
-          <p>Meet with our team to discuss your roadmap and implementation plan.</p>
-        </div>
-        
-        <div class="benefit-card">
-          <div class="stat-number">4</div>
-          <h3>Implementation</h3>
-          <p>Begin building your revenue system with our guidance and support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What to Expect - The Audit -->
-  <section class="features-section">
-    <div class="container">
-      <h2>What to Expect</h2>
-      
-      <div class="system-section">
-          <div class="system-content">
-              <div class="system-text">
-                  <h3>The Comprehensive Audit</h3>
-                  <p>Our diagnostic audit evaluates six critical failure categories that impact your revenue system:</p>
-                  <ul class="benefits-list">
-                      <li><strong>Demand Failure</strong> - Not enough qualified leads</li>
-                      <li><strong>Capture Failure</strong> - Leads not converting to customers</li>
-                      <li><strong>System Failure</strong> - Operations not scaling efficiently</li>
-                      <li><strong>Capability Failure</strong> - Team lacks required skills</li>
-                      <li><strong>Continuity Failure</strong> - Customer retention issues</li>
-                      <li><strong>Authority Failure</strong> - Weak market positioning</li>
-                  </ul>
-                  <p style="margin-top: 1.5rem;">Each category is analyzed in depth to create a complete picture of your revenue system.</p>
-              </div>
-              <div class="system-image">
-                  <img src="/images/audit-report.png" alt="Zinara Digital professional audit report with findings and risk assessment" loading="lazy">
-              </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What to Expect - The Roadmap -->
-  <section class="features-section">
-    <div class="container">
-      <div class="system-section system-alt">
-          <div class="system-content">
-              <div class="system-text">
-                  <h3>Your Prioritized Roadmap</h3>
-                  <p>You'll receive a comprehensive, actionable roadmap that includes:</p>
-                  <ul class="benefits-list">
-                      <li><strong>Revenue Leaks Identified</strong> - Exact points where revenue is lost</li>
-                      <li><strong>Quick Wins</strong> - 30-day actions for immediate impact</li>
-                      <li><strong>12-Month Growth Plan</strong> - Strategic milestones and targets</li>
-                      <li><strong>Implementation Timeline</strong> - Phased approach with clear deadlines</li>
-                      <li><strong>Resource Requirements</strong> - Team, tools, and budget needed</li>
-                      <li><strong>Expected Outcomes</strong> - Measurable results and KPIs</li>
-                  </ul>
-                  <p style="margin-top: 1.5rem;">This roadmap becomes your blueprint for 3-5x revenue growth.</p>
-              </div>
-              <div class="system-image">
-                  <img src="/images/roadmap-planning.png" alt="Zinara Digital digital growth roadmap strategy with metrics and planning" loading="lazy">
-              </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Next Steps -->
-  <section class="benefits-section">
-    <div class="container">
-      <h2>Ready to Get Started?</h2>
-      <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Choose how you'd like to begin your journey with Zinara Digital Systems.</p>
-      
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <h3>Free Audit</h3>
-          <p>Start with a comprehensive diagnostic audit to identify revenue failures and get your recovery roadmap.</p>
-          <a href="/audit.html" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">Schedule Audit</a>
-        </div>
-        
-        <div class="benefit-card">
-          <h3>Learn More</h3>
-          <p>Explore our four integrated layers and understand how they work together to create predictable revenue.</p>
-          <a href="/system.html" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">View System</a>
-        </div>
-        
-        <div class="benefit-card">
-          <h3>Contact Us</h3>
-          <p>Have questions? Our team is ready to discuss your specific needs and how we can help.</p>
-          <a href="/contact.html" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">Get in Touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Let's Build Your Revenue System</h2>
-      <p>Start with a free audit and discover your path to 3-5x revenue growth.</p>
-      <a href="/audit.html" class="btn btn-primary btn-large">Start Your Free Audit</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Zinara Digital Systems</h3>
-                <p>Building predictable revenue systems for African businesses.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="/digital-marketing.html">Digital Marketing</a></li>
-                    <li><a href="/ai-training.html">AI Training</a></li>
-                    <li><a href="/automation.html">Automation</a></li>
-                    <li><a href="/audit.html">Revenue Audit</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/privacy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: info@zinara.co.ke</p>
-                <p>Phone: +254 798 859 452</p>
+    <section class="section">
+        <div class="container">
+            <div class="grid-50-50">
+                <div class="content-side">
+                    <h2>Step 1: The Revenue Audit</h2>
+                    <p>We analyze your current digital infrastructure, identifying leaks and hidden opportunities. You get a clear picture of your starting point.</p>
+                </div>
+                <div class="image-side">
+                    <img src="/images/audit-report.png" alt="Revenue Audit Process">
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Zinara Digital Systems. All rights reserved.</p>
-        </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="/js/nav.js" defer></script>
+    <section class="section alt-bg">
+        <div class="container">
+            <div class="grid-50-50 reverse">
+                <div class="content-side">
+                    <h2>Step 2: Strategy Roadmap</h2>
+                    <p>We design a custom 90-day action plan tailored to your business goals, prioritizing the systems that will deliver the fastest ROI.</p>
+                </div>
+                <div class="image-side">
+                    <img src="/images/roadmap-planning.png" alt="Strategy Roadmap Process">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital Logo">
+                    <p>Building high-authority revenue systems for the modern African enterprise.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Systems</h4>
+                    <ul>
+                        <li><a href="/services/social-media.html">Social Media</a></li>
+                        <li><a href="/services/seo.html">SEO Strategy</a></li>
+                        <li><a href="/services/paid-ads.html">Paid Ads</a></li>
+                        <li><a href="/services/lead-acq.html">Lead Acquisition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>AI Training</h4>
+                    <ul>
+                        <li><a href="/services/ai-fundamentals.html">AI Fundamentals</a></li>
+                        <li><a href="/services/tool-mastery.html">Tool Mastery</a></li>
+                        <li><a href="/services/workflow.html">Workflow Automation</a></li>
+                        <li><a href="/services/certification.html">Certification</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Automation</h4>
+                    <ul>
+                        <li><a href="/services/lead-agent.html">Lead Agent</a></li>
+                        <li><a href="/services/cs-agent.html">CS Agent</a></li>
+                        <li><a href="/services/rev-ops.html">Rev Ops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zinara Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav.js" defer></script>
 </body>
 </html>

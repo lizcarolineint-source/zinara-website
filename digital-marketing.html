@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing Systems | Zinara Digital</title>
-    <meta name="description" content="Integrated digital marketing systems for African enterprises. Scale your reach and revenue with automated content and lead generation.">
+    <meta name="description" content="Scale your reach and revenue with Zinara's integrated digital marketing systems. Automated content, SEO strategy, and high-ROI paid advertising.">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,33 +13,36 @@
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="/" class="nav-logo"><img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital"></a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <a href="/" class="nav-logo">
+                <img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" id="navToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
                 <li><a href="/digital-marketing.html">Marketing</a></li>
                 <li><a href="/ai-training.html">AI Training</a></li>
                 <li><a href="/automation.html">Automation</a></li>
-                <li><a href="/contact.html" class="btn btn-primary" style="color: white; padding: 0.5rem 1rem;">Get Started</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/audit.html" class="btn btn-primary nav-cta">Free Audit</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero-sub">
-        <div class="container">
-            <div class="grid-50-50">
-                <div>
-                    <h1>Digital Marketing Systems</h1>
-                    <p>Build an unshakeable market presence. Our integrated marketing systems ensure your message reaches the right audience at the right time, 24/7.</p>
-                    <a href="/contact.html" class="btn btn-primary">Build Your Marketing Engine</a>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Digital Marketing Systems</h1>
+                <p>Build an unshakeable market presence. Our integrated marketing systems ensure your message reaches the right audience at the right time, 24/7.</p>
+                <div class="hero-ctas">
+                    <a href="/audit.html" class="btn btn-primary btn-large">Build Your Marketing Engine</a>
                 </div>
-                <div class="image-container">
-                    <img src="/images/marketing-vibrant.png" alt="Zinara Digital Marketing Systems">
-                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/marketing-vibrant.png" alt="Zinara Digital Marketing Systems">
             </div>
         </div>
     </header>
@@ -47,27 +50,37 @@
     <section class="section" id="social-media">
         <div class="container">
             <div class="grid-50-50">
-                <div>
+                <div class="content-side">
                     <h2>Social Media Management</h2>
                     <p>Automated content distribution across LinkedIn, Twitter, and Meta. We build the systems that keep your brand active while you focus on leadership.</p>
-                    <a href="/services/social-media.html" class="btn btn-primary">Learn More</a>
+                    <ul class="feature-list">
+                        <li>Consistent Brand Presence</li>
+                        <li>Automated Posting Workflows</li>
+                        <li>Cross-Platform Synchronization</li>
+                    </ul>
+                    <a href="/services/social-media.html" class="btn btn-primary">System Details</a>
                 </div>
-                <div class="image-container">
+                <div class="image-side">
                     <img src="/images/sub-social-media.png" alt="Social Media System">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="seo" style="background-color: var(--light-gray);">
+    <section class="section alt-bg" id="seo">
         <div class="container">
             <div class="grid-50-50 reverse">
-                <div>
+                <div class="content-side">
                     <h2>SEO & Content Strategy</h2>
                     <p>Build long-term digital authority. Our SEO systems identify high-intent keywords and create the content that ranks and converts.</p>
-                    <a href="/services/seo.html" class="btn btn-primary">Learn More</a>
+                    <ul class="feature-list">
+                        <li>Authority-Driven Keywords</li>
+                        <li>Content Lifecycle Automation</li>
+                        <li>Predictable Organic Traffic</li>
+                    </ul>
+                    <a href="/services/seo.html" class="btn btn-primary">System Details</a>
                 </div>
-                <div class="image-container">
+                <div class="image-side">
                     <img src="/images/sub-seo.png" alt="SEO System">
                 </div>
             </div>
@@ -77,38 +90,48 @@
     <section class="section" id="paid-ads">
         <div class="container">
             <div class="grid-50-50">
-                <div>
+                <div class="content-side">
                     <h2>Paid Advertising</h2>
                     <p>High-ROI ad systems that turn clicks into customers. We optimize your spend across Google and Meta for maximum acquisition.</p>
-                    <a href="/services/paid-ads.html" class="btn btn-primary">Learn More</a>
+                    <ul class="feature-list">
+                        <li>Conversion-Optimized Ad Copy</li>
+                        <li>Real-time Bidding Automation</li>
+                        <li>Detailed ROI Attribution</li>
+                    </ul>
+                    <a href="/services/paid-ads.html" class="btn btn-primary">System Details</a>
                 </div>
-                <div class="image-container">
+                <div class="image-side">
                     <img src="/images/sub-paid-ads.png" alt="Paid Ads System">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="lead-acquisition" style="background-color: var(--light-gray);">
+    <section class="section alt-bg" id="lead-acquisition">
         <div class="container">
             <div class="grid-50-50 reverse">
-                <div>
+                <div class="content-side">
                     <h2>Lead Acquisition</h2>
                     <p>Strategic funnels that fill your pipeline with qualified prospects. We build the bridges between your marketing and sales teams.</p>
-                    <a href="/services/lead-acq.html" class="btn btn-primary">Learn More</a>
+                    <ul class="feature-list">
+                        <li>Automated Lead Capture</li>
+                        <li>High-Intent Funnel Design</li>
+                        <li>Seamless CRM Integration</li>
+                    </ul>
+                    <a href="/services/lead-acq.html" class="btn btn-primary">System Details</a>
                 </div>
-                <div class="image-container">
+                <div class="image-side">
                     <img src="/images/sub-lead-acq.png" alt="Lead Acquisition System">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-logo">
-                    <img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital">
+                    <img src="/images/ZINARA_DIGITAL_LOGO-removebg-preview(1).png" alt="Zinara Digital Logo">
                     <p>Building high-authority revenue systems for the modern African enterprise.</p>
                 </div>
                 <div class="footer-column">
@@ -146,8 +169,12 @@
                     </ul>
                 </div>
             </div>
-            <p style="text-align: center; border-top: 1px solid var(--light-gray); padding-top: 2rem;">&copy; 2026 Zinara Digital. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zinara Digital. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="/js/nav.js" defer></script>
 </body>
 </html>
